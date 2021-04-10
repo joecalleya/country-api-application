@@ -1,0 +1,6 @@
+<p>search works!</p>
+<div class="SearchbarContainer">
+    <input [(ngModel)]="searchText" class="searchBoxInput" type="text">
+    <button class="btnSearch" (click)="handleSearch()">Search For Country</button>
+    <app-showresults [searchResult]="searchResult"></app-showresults>
+</div>
