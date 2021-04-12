@@ -1,7 +1,6 @@
 $grey-colour1: rgb(113, 114, 136);
 $white-colour1: rgb(248, 249, 250);
 $blue-colour1: rgb(66,133,244);
-$red-colour1: rgb(234,67,53);
 $yellow-colour1: rgb(251,188,5);
 $green-colour1: rgb(51,171,77);
 
@@ -14,16 +13,17 @@ $green-colour1: rgb(51,171,77);
 
   .SearchbarContainer {
     border: 1px $grey-colour1 solid;
-    border-radius: 20px;
+    border-radius: 2px;
     padding: 4px;
+    background-color: $white-colour1;
     &:hover {
       box-shadow: -1px 1px 4px $grey-colour1;
     }
 
     .searchBoxInput {
+      border: none;
       width: 600px;
-      padding: 7px;
-      height: 20px;
+      height: 50px;
       &:focus {
         outline: none;
       }
