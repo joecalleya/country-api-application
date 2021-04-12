@@ -1,0 +1,49 @@
+$grey-colour1: rgb(113, 114, 136);
+$white-colour1: rgb(248, 249, 250);
+$blue-colour1: rgb(66,133,244);
+$red-colour1: rgb(234,67,53);
+$yellow-colour1: rgb(251,188,5);
+$green-colour1: rgb(51,171,77);
+
+.search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .SearchbarContainer {
+    border: 1px $grey-colour1 solid;
+    border-radius: 20px;
+    padding: 4px;
+    &:hover {
+      box-shadow: -1px 1px 4px $grey-colour1;
+    }
+
+    .searchBoxInput {
+      width: 600px;
+      padding: 7px;
+      height: 20px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .btnSearch {
+    color: $grey-colour1;
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+    border: none;
+    &:hover {
+      background-color: $green-colour1;
+    }
+    &:focus {
+      outline: none;
+      border: 1px $blue-colour1 solid;
+    }
+
+
+  }
+}

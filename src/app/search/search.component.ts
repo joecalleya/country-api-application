@@ -51,7 +51,9 @@ export class SearchComponent implements OnInit {
     this.onItemSearch.emit(searchFor);
 
     this.crudService.getCountryData(this.searchText).then((response: any) => {
-      this.searchResult = response[1][0];
+      //first row of response is metadata - remove this
+      this.searchResult = response[1];
+      //if it value then keep the response
       console.log("returned", (this.searchResult))
     });
   }

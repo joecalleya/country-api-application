@@ -1,6 +1,7 @@
-<p>search works!</p>
-<div class="SearchbarContainer">
-    <input [(ngModel)]="searchText" class="searchBoxInput" type="text">
-    <button class="btnSearch" (click)="handleSearch()">Search For Country</button>
-    <app-showresults [searchResult]="searchResult"></app-showresults>
-</div>
+<section class="search">
+    <div class="SearchbarContainer">
+        <input [(ngModel)]="searchText" class="searchBoxInput" type="text" placeholder="enter ISO code">
+        <button class="btnSearch" (click)="handleSearch()">Search</button>
+    </div>
+</section>
+<app-showresults [searchResult]="searchResult"></app-showresults>

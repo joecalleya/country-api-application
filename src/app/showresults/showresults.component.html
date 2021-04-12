@@ -1,2 +1,10 @@
-<p>showresults works!</p>
-<p>{{searchResult.capitalCity}}</p>
+<div class="CountryRender" *ngFor="let item of searchResult">
+    <p>Country Name: {{item.name}}</p>
+    <p>Region: {{item.region.value}}</p>
+    <p>Capital City: {{item.capitalCity}}</p>
+    <p>Longitude: {{item.longitude}}</p>
+    <p>Latitude: {{item.latitude}}</p>
+</div>
+<div *ngIf="!searchResult">
+    <p>Please enter a Valid ISO Code</p>
+</div>
