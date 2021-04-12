@@ -12,6 +12,6 @@ context('Cypress Testing', () => {
           it('type in-valid code, check response', () => {
             cy.get('.searchBoxInput').type('123')
             cy.get('.btnSearch').click()
-            cy.get('div').should('contain', 'Please enter a Valid ISO Code')})
+            cy.get('div').should('contain', 'Please enter a valid ISO Code')})
           })
         })
