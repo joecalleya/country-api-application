@@ -47,14 +47,12 @@ export class SearchComponent implements OnInit {
   }
 
   handleSearch() {
+    // This function will call the API service and wait for the response
     const searchFor = this.searchText;
     this.onItemSearch.emit(searchFor);
-
     this.crudService.getCountryData(this.searchText).then((response: any) => {
       //first row of response is metadata - remove this
       this.searchResult = response[1];
-      //if it value then keep the response
-      console.log("returned", (this.searchResult))
     });
   }
   

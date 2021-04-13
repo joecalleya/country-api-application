@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
-import { Routes  } from '@angular/router';
+import { Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ShowresultsComponent } from './showresults/showresults.component';
 
 const routes: Routes = [
-  {path: '', component: SearchComponent},
+  { path: '', component: SearchComponent },
 ];
 
 @NgModule({
@@ -20,9 +20,9 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule
-    ,HttpClientModule
-    ,FormsModule
-    ,AppRoutingModule
+    , HttpClientModule
+    , FormsModule
+    , AppRoutingModule
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]
